@@ -1095,21 +1095,28 @@ const App = () => {
         <div className='w-full md:col-span-6 col-span-12 flex justify-center items-center'>
           <img src={contactImg} className='w-full h-auto'/>
         </div>
-      <form className='w-full col-span-12  sm:mt-10 lg:mt-0 md:col-span-6' name="contact" netlify>
-        <div className='flex-col flex gap-y-1 text-sm'>
-          <label>Name</label>
-        <input type='text' name='name' placeholder='Enter Your Name' className=' w-full py-2.5 bg-[#374151] rounded-lg px-3 border-none outline-none'/>
-        </div>
-        <div className='flex-col flex gap-y-1 mt-4 text-sm'>
-          <label>Email</label>
-        <input type='email' name='email' placeholder='Enter Your Email' className='  py-2.5 w-full bg-[#374151] rounded-lg px-3 border-none outline-none'/>
-        </div>
-        <div className='flex-col flex gap-y-1 mt-4 text-sm'>
-          <label >Message</label>
-        <textarea rows={7} name='message' placeholder='Enter Your Message' className='py-2 w-full bg-[#374151] rounded-lg px-3 border-none outline-none'/>
-        </div>
-        <button type='submit' className='bg-[#1788ae]  w-full font-medium py-2 rounded-lg mt-4'>Connect</button>
-    </form>
+        <form className='w-full col-span-12 sm:mt-10 lg:mt-0 md:col-span-6' name="contactUs" method="POST" data-netlify="true">
+
+  <input type="hidden" name="form-name" value="contactUs" />
+
+  <div className='flex-col flex gap-y-1 text-sm'>
+    <label>Name</label>
+    <input type='text' name='name' placeholder='Enter Your Name' className='w-full py-2.5 bg-[#374151] rounded-lg px-3 border-none outline-none'/>
+  </div>
+
+  <div className='flex-col flex gap-y-1 mt-4 text-sm'>
+    <label>Email</label>
+    <input type='email' name='email' placeholder='Enter Your Email' className='py-2.5 w-full bg-[#374151] rounded-lg px-3 border-none outline-none'/>
+  </div>
+
+  <div className='flex-col flex gap-y-1 mt-4 text-sm'>
+    <label>Message</label>
+    <textarea rows={7} name='message' placeholder='Enter Your Message' className='py-2 w-full bg-[#374151] rounded-lg px-3 border-none outline-none'></textarea>
+  </div>
+
+  <button type='submit' className='bg-[#1788ae] w-full font-medium py-2 rounded-lg mt-4'>Connect</button>
+</form>
+
       </div>
     
     
