@@ -1095,7 +1095,7 @@ const App = () => {
         <div className='w-full md:col-span-6 col-span-12 flex justify-center items-center'>
           <img src={contactImg} className='w-full h-auto'/>
         </div>
-        <form className='w-full col-span-12 sm:mt-10 lg:mt-0 md:col-span-6' name="contact" netlify>
+        <form className='w-full col-span-12 sm:mt-10 lg:mt-0 md:col-span-6' name="contact" data-netlify='true' action='post'>
 
   <input type="hidden" name="form-name" value="contactUs" />
 
