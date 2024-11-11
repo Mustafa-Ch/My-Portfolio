@@ -124,7 +124,7 @@ const App = () => {
     },
   ];
   return (
-    <div className={`bg-[#111] ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}   text-white font-[Poppins] min-h-screen w-full`}>
+    <div className={`bg-[#111] ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}    font-[Poppins] min-h-screen w-full`}>
 
      <div className='container mx-auto min-h-screen  px-3 relative  xl:px-10'>
      <header className='flex justify-between items-center py-7 '>
