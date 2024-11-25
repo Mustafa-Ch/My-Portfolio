@@ -239,7 +239,7 @@ const App = () => {
               </svg>
             </button>
           </DialogTrigger>
-          <DialogContent className={`bg-inherit ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}  flex flex-col lg:flex-row gap-x-10 justify-center items-center w-full sm:max-w-[95%] max-h-[700px]`}>
+          <DialogContent className={`bg-inherit ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}  flex flex-col lg:flex-row gap-x-10 justify-center items-center w-full sm:max-w-[95%] `}>
             <div className="w-full flex flex-col justify-center lg:items-start items-center">
               <h2 className="text-[#1A729F] text-3xl">About Me</h2>
               <p className="mt-7 w-full xl:w-[80%]">
