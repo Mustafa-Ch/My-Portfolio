@@ -210,7 +210,7 @@ const App = () => {
               ></path></svg></a>
         </div>
       </header>
-      <section className=' translate-y-1/4 mt-3 '>
+      <section className=' top-sec translate-y-1/4  mt-3 '>
         <h1 className='lg:text-5xl sm:text-4xl  font-[Spartan] lg:w-[85%] md:w-[85%] w-[95%] xl:w-[70%] text-3xl leading-10 pointer-events-none lg:leading-snug font-bold sm:leading-snug '> Hello 👋 <br /> I'm Mustafa Shahid - passionate Full Stack Developer
         based in Karachi, Pakistan.</h1>
      <div>
@@ -241,7 +241,7 @@ const App = () => {
               </svg>
             </button>
           </DialogTrigger>
-          <DialogContent className={`bg-inherit ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}  flex flex-col lg:flex-row gap-x-10 justify-center items-center w-full sm:max-w-[95%] md:min-h-[630px]  md:h-[90%]  `}>
+          <DialogContent className={`bg-inherit ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}  flex flex-col lg:flex-row gap-x-10 justify-center items-center w-full max-w-[1250px] mx-auto sm:w-[95%] md:min-h-[630px]  md:h-[90%]  `}>
         
 
            <div className="w-full flex flex-col justify-center lg:items-start items-center">
@@ -1042,10 +1042,10 @@ const App = () => {
           </li>
         </ul>
       </div>
-      <section id='latest' className='min-h-screen'>
+      <section id='latest' className='min-h-screen max-w-[1250px] w-full mx-auto'>
     <Projects/>
       </section>
-      <section>
+      <section className='max-w-[1250px] w-full mx-auto'>
        <div className='flex justify-center items-center tracking-wide mt-20 px-4 md:mt-0'>
        <h1 className='border-2 border-[#1788ae] inline-block py-2.5 sm:px-10 px-3 font-bold text-[26px] sm:text-3xl font-[Nunito] rounded-lg '>Why Work With Me?</h1>
        </div>
@@ -1094,7 +1094,7 @@ const App = () => {
        </div>
 
       </section> 
-      <section className='mt-4'>
+      <section className='mt-4 max-w-[1250px] w-full mx-auto'>
       <div className='flex justify-center items-center tracking-wide mt-10 '>
        <h1 className='border-2 border-[#1788ae] inline-block py-2.5 px-10 font-bold text-3xl font-[Nunito] rounded-lg text-[#1788ae]'>Lets Connect</h1>
        </div>
@@ -1129,7 +1129,7 @@ const App = () => {
     
     
       </section>
-      <footer className='text-center h-[150px] mt-10 font-[Nunito]'>
+      <footer className='text-center h-[150px] mt-10 font-[Nunito] w-full mx-auto max-w-[1250px]'>
       <p className='text-[12px] font-[Nunito]'>Mustafa Shahid © 2024</p>
        <h1 className='font-[Spartan]  text-2xl font-semibold text-center mt-3'>Mustafa Shahid</h1>
        <div className=''>

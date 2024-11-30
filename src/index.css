@@ -4,6 +4,12 @@
 
 /* ... */
 
+@media (min-width: 1400px) {
+  .top-sec {
+    transform: translateY(50%); /* 2/4 ka matlab yaha 50% hai */
+  }
+}
+
 @layer base {
   :root {
 
