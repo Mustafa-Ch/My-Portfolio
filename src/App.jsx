@@ -213,7 +213,9 @@ const App = () => {
       <section className=' translate-y-1/4 mt-3 '>
         <h1 className='lg:text-5xl sm:text-4xl  font-[Spartan] lg:w-[85%] md:w-[85%] w-[95%] xl:w-[70%] text-3xl leading-10 pointer-events-none lg:leading-snug font-bold sm:leading-snug '> Hello 👋 <br /> I'm Mustafa Shahid - passionate Full Stack Developer
         based in Karachi, Pakistan.</h1>
-        <Dialog >
+     <div>
+     <div className='h-fit '>
+     <Dialog >
           <DialogTrigger >
             <button className="bg-[#4595eb] mt-5 self-start py-2 px-5 rounded font-bold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
               About Me
@@ -239,10 +241,12 @@ const App = () => {
               </svg>
             </button>
           </DialogTrigger>
-          <DialogContent className={`bg-inherit ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}  flex flex-col lg:flex-row gap-x-10 justify-center items-center w-full sm:max-w-[95%] `}>
-            <div className="w-full flex flex-col justify-center lg:items-start items-center">
-              <h2 className="text-[#1A729F] text-3xl">About Me</h2>
-              <p className="mt-7 w-full xl:w-[80%]">
+          <DialogContent className={`bg-inherit ${mode=='light'?'bg-white text-black':'bg-[#111] text-white'}  flex flex-col lg:flex-row gap-x-10 justify-center items-center w-full sm:max-w-[95%] md:min-h-[630px]  md:h-[90%]  `}>
+        
+
+           <div className="w-full flex flex-col justify-center lg:items-start items-center">
+              <h2 className="md:text-3xl text-2xl text-[#1A729F]">About Me</h2>
+              <p className="mt-2 w-full  text-sm md:text-[15px]  xl:w-[80%]">
                 I help business owners and web developers create engaging,
                 vision-aligned websites that captivate visitors. My toolkit
                 includes a range of modern technologies and tools to make each
@@ -252,19 +256,19 @@ const App = () => {
               </p>
               <div className="flex flex-wrap items-center gap-3 mt-5 text-sm font-medium w-full xl:w-[80%]">
                 {technologies.map((item) => (
-                  <p className="border-[0.5px] border-gray-400 rounded-full px-3 py-1">
+                  <p className="border-[0.5px] border-gray-400 rounded-full px-2 md:px-3 py-1">
                     {item}
                   </p>
                 ))}
               </div>
-              <div className="flex gap-x-10 mt-8 md:mt-20 items-center ">
+              <div className="flex gap-x-10 my-8 md:my-10 items-center ">
                 {mern.map((item) => (
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger>
                         {item.svg}
                         <h1
-                          className={`mt-2 font-medium text-2xl ${
+                          className={`mt-2 font-medium text-xl md:text-2xl ${
                             item.letter == "M"
                               ? "text-[#47A248]"
                               : item.letter == "R"
@@ -936,10 +940,15 @@ const App = () => {
                 </defs>
               </svg>
             </div>
+
+         
           </DialogContent>
         </Dialog>
+     </div>
+     </div>
        
       </section>
+      {/* comment */}
       <div className='absolute bottom-12 hidden sm:block left-1/2 -translate-x-1/2'>
       <a href='#latest'>
       <button  className="bg-[#4595eb]  mt-5 self-start py-2 px-5 rounded font-bold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
